@@ -10,6 +10,11 @@ import produce from "immer";
 import NavBar from "./components/NavBar";
 import Cart from "./components/Cart";
 import ExpandableText from "./components/ExpandableText";
+import Form from "./components/Form";
+import "./index.css";
+import { ExpenseTracker } from "./components/ExpenseTracker";
+import { ExpenseList } from "./expense-tracker/components/ExpenseList";
+import { ExpenseTrackerVideo } from "./expense-tracker/ExpenseTrackerVideo";
 
 function App() {
   // let items = ["New York", "San Francisco", "Tokyo", "London", "Praha"];
@@ -147,6 +152,9 @@ function App() {
         illum igendi perferendis rerum provident eos expedita reiciendis, iste
         necessitatibus modi dolores. Accusamus, ut nobis.
       </ExpandableText> */}
+      {/*<Form></Form>*/}
+      {/*<ExpenseTracker></ExpenseTracker>*/}
+      <ExpenseTrackerVideo />
     </div>
   );
 }
