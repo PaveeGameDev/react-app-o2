@@ -15,6 +15,7 @@ import "./index.css";
 import { ExpenseTracker } from "./components/ExpenseTracker";
 import { ExpenseList } from "./expense-tracker/components/ExpenseList";
 import { ExpenseTrackerVideo } from "./expense-tracker/ExpenseTrackerVideo";
+import { BackEndConnectionMain } from "./backend-connection/BackEndConnectionMain";
 
 function App() {
   // let items = ["New York", "San Francisco", "Tokyo", "London", "Praha"];
@@ -84,37 +85,37 @@ function App() {
   //   ],
   // });
 
-  const handleClick = () => {
-    // const newDrink = {
-    //   ...drink, //copy all properties
-    //   price: 6,
-    // };
-    // setDrink(newDrink);
-    // //better
-    // setDrink({ ...drink, price: 6 });
-    // setCustomer({
-    //   ...customer,
-    //   address: { ...customer.address, zipCode: 94112 }, //When using ... to copy an object, its object children are copied by reference, so we need to copy it once more
-    // });
-    // setTags([...tags, "exciting"]); //Add
-    // setTags(tags.filter((tag) => tag !== "happy")); //Remove
-    // setTags(tags.map((tag) => (tag === "happy" ? "happiness" : tag))); //Update
-    // setBugs(bugs.map((bug) => (bug.id === 1 ? { ...bug, fixed: true } : bug)));
-    // setBugs(
-    //   produce((draft) => {
-    //     const bug = draft.find((bug) => bug.id === 1);
-    //     if (bug) bug.fixed = true;
-    //   })
-    // );
-    // setGame({ ...game, player: { ...game.player, name: "bob" } });
-    // setPizza({ ...pizza, toppings: [...pizza.toppings, "Cheese"] });
-    // setCart({
-    //   ...cart,
-    //   items: cart.items.map((item) =>
-    //     item.id === 1 ? { ...item, quantity: item.quantity + 1 } : item
-    //   ),
-    // });
-  };
+  // const handleClick = () => {
+  // const newDrink = {
+  //   ...drink, //copy all properties
+  //   price: 6,
+  // };
+  // setDrink(newDrink);
+  // //better
+  // setDrink({ ...drink, price: 6 });
+  // setCustomer({
+  //   ...customer,
+  //   address: { ...customer.address, zipCode: 94112 }, //When using ... to copy an object, its object children are copied by reference, so we need to copy it once more
+  // });
+  // setTags([...tags, "exciting"]); //Add
+  // setTags(tags.filter((tag) => tag !== "happy")); //Remove
+  // setTags(tags.map((tag) => (tag === "happy" ? "happiness" : tag))); //Update
+  // setBugs(bugs.map((bug) => (bug.id === 1 ? { ...bug, fixed: true } : bug)));
+  // setBugs(
+  //   produce((draft) => {
+  //     const bug = draft.find((bug) => bug.id === 1);
+  //     if (bug) bug.fixed = true;
+  //   })
+  // );
+  // setGame({ ...game, player: { ...game.player, name: "bob" } });
+  // setPizza({ ...pizza, toppings: [...pizza.toppings, "Cheese"] });
+  // setCart({
+  //   ...cart,
+  //   items: cart.items.map((item) =>
+  //     item.id === 1 ? { ...item, quantity: item.quantity + 1 } : item
+  //   ),
+  // });
+  // };
 
   return (
     <div>
@@ -152,9 +153,10 @@ function App() {
         illum igendi perferendis rerum provident eos expedita reiciendis, iste
         necessitatibus modi dolores. Accusamus, ut nobis.
       </ExpandableText> */}
-      {/*<Form></Form>*/}
-      {/*<ExpenseTracker></ExpenseTracker>*/}
-      <ExpenseTrackerVideo />
+      {/*<Form/>*/}
+      {/*<ExpenseTracker />*/}
+      {/*<ExpenseTrackerVideo />*/}
+      <BackEndConnectionMain />
     </div>
   );
 }

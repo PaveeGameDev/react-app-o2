@@ -2,8 +2,8 @@ import { ExpenseList } from "./components/ExpenseList";
 import { useState } from "react";
 import { ExpenseFilter } from "./components/ExpenseFilter";
 import { ExpenseForm } from "./components/ExpenseForm";
+import { categories } from "./categories";
 
-export const categories = ["Groceries", "Utilities", "Entertainment"];
 export const ExpenseTrackerVideo = () => {
   const [expenses, setExpenses] = useState([
     { id: 1, description: "aaa", amount: 10, category: "Utilities" },
@@ -17,7 +17,11 @@ export const ExpenseTrackerVideo = () => {
   return (
     <div>
       <div className="mb-5">
-        <ExpenseForm />
+        <ExpenseForm
+          onSubmit={(expense) =>
+            setExpenses([...expenses, { ...expense, id: expenses.length + 1 }])
+          }
+        />
       </div>
       <div className="mb-3">
         <ExpenseFilter

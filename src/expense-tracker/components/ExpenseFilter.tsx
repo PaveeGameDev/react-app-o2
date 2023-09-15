@@ -1,4 +1,4 @@
-import { categories } from "../ExpenseTrackerVideo";
+import { categories } from "../categories";
 
 type Props = {
   onSelectCategory: (category: string) => void;
